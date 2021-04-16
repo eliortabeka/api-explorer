@@ -1,0 +1,33 @@
+header {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #000000;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem 0;
+
+  h1 {
+    margin: 0 0 1rem 0;
+  }
+}
+
+section {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  height: 100%;
+
+  @media screen and (max-width: 680px){
+    grid-template-columns: 1fr;
+  }
+}
+
+nav {
+  padding: 1.2rem;
+}
+
+main {
+  background: #cecece;
+  padding: 1.2rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
